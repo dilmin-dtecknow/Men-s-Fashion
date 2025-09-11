@@ -1,0 +1,46 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Invoice Header */
+  .invoice-header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .invoice-title {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  
+  /* Table Styles */
+  .table {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  .text-center p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .text-md-right {
+      text-align: left !important;
+    }
+  
+    .col-md-6 {
+      margin-bottom: 20px;
+    }
+  }
+  

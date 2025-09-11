@@ -1,0 +1,88 @@
+/* .products { */
+   /* width: 250px;   Set a fixed width for product containers */
+   /* height: 400px;  Set a fixed height */
+   /*  margin: 20px auto;  Space between the products and center them */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Add some shadow */
+    /* padding: 15px; */
+    /* border-radius: 8px; */
+    /* background-color: #f8f9fa;  Light background color */
+/* } */
+
+/* .product-img { */
+    /*width: 200px;   Set fixed width for product image */
+   /* height: 200px;  Set fixed height for product image */
+    /*object-fit: cover;   Keep the image proportions within the container */
+/* } */
+
+.p-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.p-price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.buy-now-btn {
+    margin-top: 15px;
+}
+
+/* .product-slider .products {
+    width: 250px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow */
+    /* border-radius: 8px;  Optional rounded corners */
+/* } */
+
+/* .product-slider .product-img { */
+    /* width: 200px; */
+   /* height: 250px;    Fixed height for images */
+  /*   object-fit: cover;  Ensure the image fits well */
+/* } */ */
+
+.product-slider .products {
+    width: 250px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow */
+    border-radius: 8px;  /* Optional rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.product-slider .product-img {
+    width: 200px;
+    height: 250px;  /* Fixed height for images */
+    object-fit: cover;  /* Ensure the image fits well */
+    display: block; /* Ensure the image behaves as a block */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.slick-prev, .slick-next {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+}
+
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+    .products {
+        width: 100%;
+        height: auto; /* Auto height for smaller screens */
+    }
+    .product-img {
+        width: 100%;
+        height: auto;
+    }
+}

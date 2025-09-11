@@ -1,0 +1,6 @@
+.product-image {
+    width: 80px; /* Set the fixed width */
+    height: 80px; /* Set the fixed height */
+    object-fit: cover; /* Keeps the aspect ratio and fills the container */
+  }
+  

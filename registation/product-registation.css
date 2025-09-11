@@ -1,0 +1,402 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #e8e9ee;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #eea63bda;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar .bottom-content {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.sidebar .bottom-content a {
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea {
+  width: calc(50% - 15px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.form-group .image-upload {
+  width: calc(33.33% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.form-group .image-upload input {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-group .image-preview {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ee905a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #fd7505;
+}
+
+/* New Section Under Register Button */
+.additional-info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.additional-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.additional-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.additional-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group .image-preview {
+  width: 150px;
+  /* Set your desired width */
+  height: 150px;
+  /* Set your desired height */
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  /* A light background for when no image is selected */
+}
+
+.image-upload {
+  margin-bottom: 15px;
+}
+
+.image-upload label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #eec65a;
+  /* Customize button color */
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.image-upload label:hover {
+  background-color: #d6bb43;
+  /* Darker shade on hover */
+}
+
+.image-upload input[type="file"] {
+  display: none;
+  /* Hide the actual file input */
+}
+
+.image-upload .image-preview {
+  display: block;
+  width: 150px;
+  /* Set your desired width */
+  height: 150px;
+  /* Set your desired height */
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  /* Light background for the preview */
+}
+
+/* Add the CSS directly here if not using an external stylesheet */
+/* Styling for the Register Button */
+button[type="button"] {
+  background-color: #fa991a;
+  /* Customize button color */
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 15px;
+  /* Adjust padding to make the button smaller */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* width: 50%; */
+  /* Adjust width */
+  height: 50px;
+  display: block;
+  /* Ensures margin auto works */
+  margin: 20px auto;
+  /* Centers the button horizontally and adds vertical spacing */
+}
+
+button[type="button"]:hover {
+  background-color: #d67243;
+  /* Darker color on hover */
+}
+
+/* Centering the form and its elements */
+.main-content {
+  text-align: center;
+  /* Centers inline elements like buttons */
+}
+
+/* Style for Select Dropdown */
+select {
+  border: solid 1px #d6bb43;
+  /* Gold-colored border */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  /* White background */
+  color: #333;
+  /* Text color */
+  font-size: 16px;
+  width: 100%;
+  /* Full width */
+  appearance: none;
+  /* Remove default arrow on some browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;base64,YOUR_ARROW_ICON");
+  /* Optionally add a custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+select:hover {
+  border-color: #f7903c;
+  /* Darker shade on hover */
+}
+
+select:focus {
+  outline: none;
+  border-color: #ee905a;
+  /* Border on focus */
+  box-shadow: 0 0 5px rgba(238, 144, 90, 0.5);
+  /* Glow effect */
+}
+
+/* Option Styling */
+select option {
+  padding: 10px;
+  background-color: #fff;
+  /* White background for options */
+  color: #333;
+  /* Option text color */
+}
+
+option:hover {
+  background-color: #f0f0f0;
+  /* Light gray background for hover */
+}
+
+/* Style for Select input */
+input {
+  border: solid 1px #d6bb43;
+  /* Gold-colored border */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  /* White background */
+  color: #333;
+  /* Text color */
+  font-size: 16px;
+  width: 100%;
+  /* Full width */
+  appearance: none;
+  /* Remove default arrow on some browsers */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;base64,YOUR_ARROW_ICON");
+  /* Optionally add a custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+input:hover {
+  border-color: #fd7505;
+  /* Darker shade on hover */
+}
+
+input:focus {
+  outline: none;
+  border-color: #ee905a;
+  /* Border on focus */
+  box-shadow: 0 0 5px rgba(238, 144, 90, 0.5);
+  /* Glow effect */
+}
+
+/* textarea */
+textarea:hover {
+  border-color: #fd7505;
+  /* Darker shade on hover */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #ee905a;
+  /* Border on focus */
+  box-shadow: 0 0 5px rgba(238, 144, 90, 0.5);
+  /* Glow effect */
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+  }
+
+  .form-group select,
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .form-group .image-upload {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .form-group select,
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .form-group .image-upload {
+    width: 100%;
+  }
+
+  .form-group button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

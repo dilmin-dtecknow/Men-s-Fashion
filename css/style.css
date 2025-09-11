@@ -1,0 +1,906 @@
+/*nav bar*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.nav-buttons {
+    margin-left: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6 {
+    color: blue;
+}
+
+.navbar {
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover {
+    color: rgb(219, 106, 14);
+}
+
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    margin-left: 10px;
+    /* font-weight: 200; */
+    cursor: pointer;
+}
+
+.navlogo {
+    width: 80px;
+    cursor: pointer;
+
+}
+
+/*nav bar*/
+
+@media only screen and (max-width:990px) {
+    .nav-buttons {
+        margin: 10px;
+    }
+
+    .nav-buttons ul {
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fas {
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+/*Home*/
+#home {
+    background-image: url(../webImg/backG.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position-x: 125px;
+        background-position-y: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span {
+    color: coral;
+}
+
+
+
+/*home*/
+
+/* new img- */
+#newp .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newp .one {
+    position: relative;
+}
+
+#newp .one .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.8;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    height: 100%;
+}
+
+#newp .one:nth-child(1) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#newp .one:nth-child(2) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#newp .one:nth-child(3) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+#newp .details button:hover {
+    background-color: chocolate;
+}
+
+#newp .one .details:hover {
+    background-color: azure;
+}
+
+/* new img- */
+
+/* feature Product- */
+
+.products {
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+
+.products img {
+    transition: 0.3s all;
+}
+
+.products:hover img {
+    opacity: 0.7;
+}
+
+
+
+.star {
+    padding: 10px 0;
+}
+
+.star i {
+    font-size: 0.9rem;
+    color: gold;
+}
+
+hr {
+    /* width: 30px; */
+    height: 3px !important;
+    opacity: 1 !important;
+
+}
+
+.products .buy-now-btn {
+    background-color: rgb(245, 126, 42);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products:hover .buy-now-btn {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* feature Product- */
+
+
+/* All Product */
+
+.fsproduct {
+    float: left;
+}
+
+.producth1 {
+    text-align: center;
+    color: gold;
+}
+
+/* All Product */
+
+
+/* single product */
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus {
+    outline: none;
+}
+
+.single-product .add-btn {
+    background-color: rgb(250, 113, 14);
+    opacity: 1;
+    transition: 0.4s all;
+
+}
+
+.single-product .add-btn:hover {
+    background-color: #222222;
+
+}
+
+.br {
+    font-weight: bold;
+    color: #f2bb39;
+}
+
+
+/* single product */
+
+/* Cart */
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th {
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #fb774b;
+}
+
+.cart td {
+    padding: 10px 20px;
+}
+
+.cart td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.cart input {
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.cart input:focus {
+    outline: none;
+}
+
+.cart .remove-cart {
+    color: #fb774b;
+    font-size: 15px;
+}
+
+.cart .remove-btn {
+    color: #fb774b;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cart .product-info p {
+    margin: 3px;
+}
+
+.cart .edit-btn {
+    text-decoration: none;
+    color: orangered;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table {
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid #fb774b;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-right: 15px;
+}
+
+.checkout-btn {
+    background-color: #2b6b05;
+    color: #fff;
+}
+
+/* Cart */
+
+/* Login */
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #fb774b;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#login-form #login-btn{
+    background-color: #fb774b;
+    color: #fff;
+}
+
+#login-form #register-url{
+    color: #fa492a;
+}
+
+#log-text{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#log-text hr{
+    width: 25%;
+    border: solid #f2bb39;
+    margin: 1px auto;
+    text-align: center;
+    
+}
+
+
+/* Login */
+
+/* register */
+
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #fb774b;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+}
+
+#register-form #register-btn{
+    background-color: #fb774b;
+    color: #fff;
+}
+
+#register-form #register-url{
+    color: #fa492a;
+}
+
+#log-text{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#log-text hr{
+    width: 25%;
+    border: solid #f2bb39;
+    margin: 1px auto;
+    text-align: center;
+    
+}
+
+
+/* register */
+
+/* My Account */
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form input{
+    margin: 5px auto;
+}
+
+#account-form #change-pass-btn{
+    color: #fff;
+    background-color: blueviolet;
+}
+
+.account-info #logout-btn{
+    color: #fa492a;
+    text-decoration: none;
+}
+
+.account-info #orders-btn{
+    color: #0e962b;
+    text-decoration: none;
+}
+
+.account-info #update-btn{
+    background-color: #fa492a; 
+    color: #fff; 
+}
+
+.detail-btn{
+    background-color: #ff5315;
+    color: #f8f9fa;
+    padding: 5px;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    border: none;
+}
+
+.no-order-notifier{
+    color: #ff5416;
+}
+
+/* My Account */
+
+/* Checkout */
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96%;
+}
+
+#checkout-form .checkout-btn-container{
+margin: 10px;
+text-align: right;
+margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: #fff;
+    background-color: #fa492a;
+}
+
+
+/* Checkout */
+
+/* Contact */
+
+#contact span{
+    color: #fb774b;
+    cursor: pointer;
+}
+
+#contact hr{
+    width: 25%;
+    border: solid #f2bb39;
+    margin: 1px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-section{
+    margin-bottom: 25%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contact */
+
+/* shop */
+/* shop button */
+.axil-btn {
+    background-color: #ff7f50; /* Your beautiful orange color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.axil-btn:hover {
+    background-color: #e5673b; /* A darker shade for hover effect */
+}
+
+.btn-info {
+    background-color: #ffb950; /* Your orange for the reset button */
+    border-color: #ff7f50;
+}
+
+.btn-info:hover {
+    background-color: #e5673b; /* Darker shade on hover */
+    border-color: #e5673b;
+}
+
+.product-image {
+    width: 250px; /* Set the desired fixed width */
+    height: 250px; /* Set the desired fixed height */
+    object-fit: cover; /* Ensures the image fits within the set dimensions without distortion */
+    border-radius: 5px; /* Optional: gives a slightly rounded corner */
+}
+
+.products {
+    padding: 10px;
+}
+
+
+/* Styling the price range slider */
+/* Styling the price range slider */
+.price-slider-container {
+    width: 100%;
+    position: relative;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ffdeb3; /* Light purple background */
+    outline: none;
+    opacity: 0.9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffbb63; /* Darker purple for the thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffc163e0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #f7aa37;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Add this to your CSS file or inside a <style> block */
+.center-highlight {
+    text-align: center;          /* Centers the text horizontally */
+    color: #ff6600;              /* Apply highlighted orange color (or any color you prefer) */
+    background-color: #f9f9f9;   /* Light background for contrast */
+    padding: 10px;               /* Padding for spacing */
+    border: 2px solid #ff6600;   /* Border to emphasize the message */
+    font-weight: bold;           /* Bold text */
+    border-radius: 5px;          /* Rounded corners for style */
+}
+
+/* Pagination styles */
+#pagination-container {
+    text-align: center; /* Center the pagination */
+}
+
+.pagination {
+    display: inline-flex; /* Use inline-flex for better alignment */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.page-item {
+    margin: 0 5px; /* Space between pagination buttons */
+}
+
+.page-link {
+    display: inline-block; /* Make the link block-level for padding */
+    padding: 10px 15px; /* Padding for better click area */
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ced4da; /* Border around the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Link color */
+    transition: background-color 0.2s, color 0.2s; /* Transition effects */
+}
+
+/* Active button style */
+.page-item.active .page-link {
+    background-color: orange; /* Highlighted color for active button */
+    color: white; /* Text color for active button */
+}
+
+/* Hover effect for buttons */
+.page-link:hover {
+    background-color: orange; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+/* shop button */
+/* shop */
+/* footer */
+
+.footer-distributed {
+    background: rgb(51, 50, 50);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #fa492a;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+/* .footer-distributed h3 span{
+	color:  lightseagreen;
+} */
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: rgb(255, 217, 147);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: rgb(227, 98, 242);
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #f2bb39;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+/* footer */

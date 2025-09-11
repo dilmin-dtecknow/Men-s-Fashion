@@ -1,0 +1,16 @@
+/* Flexbox for 2x2 layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 45%;  /* Allow form groups to take up to 45% width */
+}
+
+@media screen and (max-width: 768px) {
+    .form-group {
+        flex: 1 1 100%;  /* Stacks the fields vertically on smaller screens */
+    }
+}

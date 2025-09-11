@@ -1,0 +1,143 @@
+ /* General Styles */
+ body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left Section */
+.profile-sidebar {
+    background: linear-gradient(135deg, #ff7eb3, #ffa069);
+    color: #ffffff;
+    flex: 1;
+    min-width: 300px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.profile-sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.profile-sidebar h2 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.profile-sidebar p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Right Section */
+.profile-details {
+    flex: 2;
+    padding: 30px;
+}
+
+.profile-details h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-details .detail-row {
+    margin-bottom: 15px;
+}
+
+.detail-row label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.detail-row span {
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.action-buttons button {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-edit {
+    background: #5cdb95;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background: #45b880;
+}
+
+.btn-logout {
+    background: #ff4b5c;
+    color: #ffffff;
+}
+
+.btn-logout:hover {
+    background: #e03241;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: #ffa069;
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-details {
+        padding: 20px;
+    }
+}
